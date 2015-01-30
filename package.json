@@ -4,6 +4,7 @@
   "description": "getting started",
   "main": "index.js",
   "dependencies": {
+    "pg": "4.2.0",
     "cool-ascii-faces": "^1.3.3",
     "express": "^4.9.8"
   },
