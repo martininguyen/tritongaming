@@ -205,8 +205,8 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
-}
 
+}
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
     background-color: #fed136;
@@ -214,7 +214,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: "Bebas Neue Book";
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
@@ -240,9 +240,9 @@ fieldset[disabled] .btn-xl.active {
 
 @media(min-width:768px) {
     .navbar-default {
-        padding: 25px 0;
+	    padding: 10px;
         border: 0;
-        background-color: transparent;
+        background-color: #222;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -275,11 +275,11 @@ header {
     background-attachment: scroll;
     background-image: url(../img/TGHeader.jpg);
     background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    background-size: auto;
+    -o-background-size: auto;
 }
 
 header .intro {
@@ -320,7 +320,7 @@ header .intro .intro-subhead {
 
     header .intro .intro-subhead {
         margin-bottom: 50px;
-        text-transform: uppercase;
+        text-transform: none;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 75px;
         font-weight: 700;
@@ -342,10 +342,9 @@ section h2.secthead {
 
 section h3.sectsub {
     margin-bottom: 75px;
-    text-transform: none;
+	text-transform: none; 
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: ;
+    font-size: 22px;
     font-weight: 400;
 }
 
