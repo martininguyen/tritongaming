@@ -6,6 +6,10 @@
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: auto;
+	padding-left:75px;
+	padding-right:75px;
+	padding-top: 70px;
 }
 
 .text-grayed {
@@ -274,12 +278,12 @@ header {
     color: #fff;
     background-attachment: scroll;
     background-image: url(../img/TGHeader.jpg);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: auto;
-    -moz-background-size: auto;
-    background-size: auto;
-    -o-background-size: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 header .intro {
