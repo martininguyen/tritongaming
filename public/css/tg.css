@@ -12,7 +12,7 @@ body {
 	padding-top: 70px;
 }
 
-@media(max-width:768px) {
+@media(max-width:1300px) {
 body{
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -355,14 +355,14 @@ section {
 section h2.secthead {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 26px;
 }
 
 section h3.sectsub {
     margin-bottom: 75px;
 	text-transform: none; 
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 400;
     padding-right: 10px; 
 }
@@ -372,6 +372,21 @@ section h3.sectsub {
 @media(min-width:768px) {
     section {
         padding: 150px 0;
+    }
+	
+	section h2.secthead {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+    }
+
+    section h3.sectsub {
+    margin-bottom: 75px;
+	text-transform: none; 
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    padding-right: 10px; 
     }
 }
 
