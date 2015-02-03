@@ -12,6 +12,18 @@ body {
 	padding-top: 70px;
 }
 
+@media(max-width:768px) {
+body{
+    overflow-x: hidden;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: auto;
+	padding-left:25px;
+	padding-right:25px;
+	padding-top: 50px;
+}
+
+}
+
 .text-grayed {
     color: #777;
 }
