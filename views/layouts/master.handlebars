@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Triton Gaming</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/tg.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:4 00,100,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body id="page-top" class="index">
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+				    <img style ="max-width:50px; margin-top: -15px;"
+ 					     src = "img/logos/tgicon.png">
+				</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#store">Store</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#divisions">Divisions</a>
+                    </li>
+					<li>
+					    <a class="page-scroll" href="#sponsors">Sponsors</a>
+					</li>
+                    <li>
+                        <a class="page-scroll" href="#team">Officers</a>
+                    </li>				
+                </ul>
+            </div>
+        </div>
+    </nav>
+	{{{body}}}
+	<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">&copy; Triton Gaming, 2015</span>
+                </div>
+                <div class="col-md-4">
+					<ul class="list-inline quicklinks">
+                        <li><a href="#"></a>
+                        </li>
+                        <li><a href="#"></a>
+                        </li>					
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://twitter.com/tritonesports"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/tritonesports"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://www.youtube.com/user/tritongamingofficial"><i class="fa fa-youtube-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+	 <!-- jQuery -->
+    <script src="./js/jquery.js"></script>
+	$(document).ready(function() {
+
+			Array.prototype.equals = function (array) {
+			    // if the other array is a falsy value, return
+			    if (!array)
+			        return false;
+
+			    // compare lengths - can save a lot of time 
+			    if (this.length != array.length)
+			        return false;
+
+			    for (var i = 0, l=this.length; i < l; i++) {
+			        // Check if we have nested arrays
+			        if (this[i] instanceof Array && array[i] instanceof Array) {
+			            // recurse into the nested arrays
+			            if (!this[i].equals(array[i]))
+			                return false;       
+			        }           
+			        else if (this[i] != array[i]) { 
+			            // Warning - two different object instances will never be equal: {x:20} != {x:20}
+			            return false;   
+			        }           
+			    }       
+			    return true;
+			}   
+
+			function burritoInit() {
+				//do stuff here
+				//
+				$('img').each(function() {
+					$(this).attr('src', '/img/team/JamesLee.jpg');
+				});
+			}
+
+			var konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+			var yourInput = [];
+
+			$(document).on('keydown', function(event) {
+				yourInput.push(event.keyCode);
+				if(yourInput.length > 11) {
+					yourInput.shift();
+				}
+				console.log(yourInput);
+
+				if(konamiCode.equals(yourInput)) {
+					burritoInit();
+				}
+			});
+		});
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="./js/classie.js"></script>
+    <script src="./js/cbpAnimatedHeader.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/tg.js"></script>
+</body>
+</html>
