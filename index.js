@@ -4,8 +4,6 @@ var cool = require('cool-ascii-faces');
 var pg = require('pg');
 var handlebars = require('express3-handlebars');
 var path = require('path');
-var officers = require('./information/officers');
-console.log(officers.officers);
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 app.set('views', path.join(__dirname, 'views'));
